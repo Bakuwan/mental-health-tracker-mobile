@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:mental_health_tracker/widgets/left_drawer.dart';
 class MyHomePage extends StatelessWidget {
     MyHomePage({super.key});
 
@@ -28,8 +28,10 @@ class MyHomePage extends StatelessWidget {
         ),
         // Warna latar belakang AppBar diambil dari skema warna tema aplikasi.
         backgroundColor: Theme.of(context).colorScheme.primary,
+        iconTheme: const IconThemeData(color: Colors.white),
       ),
       // Body halaman dengan padding di sekelilingnya.
+      drawer: const LeftDrawer(),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         // Menyusun widget secara vertikal dalam sebuah kolom.
